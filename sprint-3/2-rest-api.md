@@ -1,6 +1,6 @@
 # REST API
 
-cefweaecawafnes.png
+![Рисунок 2](../cefweaecawafnes.png)
 *[В данном разделе необходимо спроектировать REST API для создаваемой системы.]*
 
 ## Клиенты REST API
