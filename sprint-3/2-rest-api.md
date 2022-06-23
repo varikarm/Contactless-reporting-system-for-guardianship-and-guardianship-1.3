@@ -1,6 +1,6 @@
 # REST API
 
-![Рисунок 2](./cefweaecawafnes.png)
+![Рисунок 2](./cefweaecawafnes2.png)
 *[В данном разделе необходимо спроектировать REST API для создаваемой системы.]*
 
 ## Клиенты REST API
@@ -43,7 +43,7 @@
 {
   "User name": "Ivan",
   "email": "ivan@gmail.com",
-  "password": "53132f6ew",
+  "password": "53132f6ew"
 }
 ```
 Пример ответа:
@@ -58,6 +58,7 @@
   "updatedAt": "2022-06-22T11:40:00Z"
 }
 ```
+Запрос доступен для ролей: Cистема,регистрация пользователя.
 # Регистация компании
  ![Рисунок 2](./2da.png)
 
@@ -67,7 +68,7 @@
   "name_company": "GNIVC",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
-  "password": "dwada1432",
+  "password": "dwada1432"
 }
 ```
 Пример ответа:
@@ -83,6 +84,69 @@
   "updatedAt": "2022-06-22T11:40:00Z"
 }
 ```
+Запрос доступен для ролей: Cистема,регистрация компании.
+
+# Авторизация
+ ![Рисунок 2](./2da.png)
+
+ `GET/company
+```json
+{
+  "name_company": "GNIVC",
+  "User name": "Aram",
+  "email": "gnivc@gmail.com",
+  "password": "dwada1432"
+}
+```
+Пример ответа:
+
+```json
+{
+  "id_student": "1",
+  "name_company": "GNIVC",
+  "User name": "Aram",
+  "email": "gnivc@gmail.com",
+  "password": "dwada1432",
+  "createdAt": "2022-06-22T11:40:00Z",
+  "updatedAt": "2022-06-22T11:40:00Z"
+}
+```
+Запрос доступен для ролей: Cистема,регистрация компании.
+
+# Получение данных о вакансии
+`GET/vacancy/1
+
+Пример ответа:
+
+```json
+{
+  "id_vacancy": "1",
+  "name_company": "GNIVC",
+  "name_vacancy": "Аналитик",
+  "dicripsion": "Предоставляем хорошие условия труда",
+  "createdAt": "2022-06-22T11:40:00Z",
+  "updatedAt": "2022-06-22T11:40:00Z"
+}
+```
+Запрос доступен для ролей: Cистема вакансии
+
+# Отклик на ваканию
+`/vacancy/1
+
+Пример ответа:
+
+```json
+{
+  "id_vacancy": "1",
+  "name_company": "GNIVC",
+  "name_vacancy": "Аналитик",
+  "dicripsion": "Предоставляем хорошие условия труда",
+  "createdAt": "2022-06-22T11:40:00Z",
+  "updatedAt": "2022-06-22T11:40:00Z"
+}
+```
+Запрос доступен для ролей: Cистема вакансии
+
 
 
 
