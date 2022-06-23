@@ -40,19 +40,15 @@
 
 `POST/sudent
 ```json
-
 {
   "User name": "Ivan",
   "email": "ivan@gmail.com",
   "password": "53132f6ew",
 }
-  
-
 ```
 Пример ответа:
 
 ```json
-
 {
   "id_student": "1",
   "User name": "Ivan",
@@ -61,28 +57,22 @@
   "createdAt": "2022-06-22T11:40:00Z",
   "updatedAt": "2022-06-22T11:40:00Z"
 }
-  
-
 ```
 # Регистация компании
  ![Рисунок 2](./2da.png)
 
  `POST/company
 ```json
-
 {
   "name_company": "GNIVC",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
   "password": "dwada1432",
 }
-  
-
 ```
 Пример ответа:
 
 ```json
-
 {
   "id_student": "1",
   "name_company": "GNIVC",
@@ -92,7 +82,7 @@
   "createdAt": "2022-06-22T11:40:00Z",
   "updatedAt": "2022-06-22T11:40:00Z"
 }
-
+```
 
 
 
