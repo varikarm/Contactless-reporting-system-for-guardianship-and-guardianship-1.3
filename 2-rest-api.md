@@ -1,6 +1,6 @@
-# REST API.
+# REST API
 
-![Рисунок 2](./cefweaecawafnes3.png)
+![Рисунок 2](./База_данных)
 
 
 ## Клиенты REST API
