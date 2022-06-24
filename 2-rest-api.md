@@ -139,7 +139,7 @@
 `POST/vacancy`
 ```json
 {
-  "name_vacancy": "Бизнес-аналитик",
+  "name_vacancy": "Аналитик",
   "name_company": "GNIVC",
   "dicripsion": "Предоставляем хорошие условия труда",
 }
