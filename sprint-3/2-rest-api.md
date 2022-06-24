@@ -51,7 +51,7 @@
 
 ```json
 {
-  "id_student": "1",
+  "id_company": "1",
   "User name": "Ivan",
   "email": "ivan@gmail.com",
   "password": "53132f6ew",
