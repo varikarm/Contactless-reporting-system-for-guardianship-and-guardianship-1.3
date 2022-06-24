@@ -1,4 +1,4 @@
-# REST API
+# REST API.
 
 ![Рисунок 2](./cefweaecawafnes3.png)
 
