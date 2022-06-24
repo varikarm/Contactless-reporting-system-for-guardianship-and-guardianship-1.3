@@ -5,11 +5,12 @@
 
 ## Клиенты REST API
 
-*[Здесь требуется перечислить, кто будет клиентом для разрабатываемого серверного REST API. Это могут быть как приложения, входящие в состав нашей системы, так и сторонние системы. Пример ниже.]*
+
 
 Клиенты REST API:
 - Мобильное приложение
 - Web-интерфейс администратора
+- Web-интерфейс потзователя
 - Сторонняя система АИС "Издательство"
 
 ## Роли
@@ -38,7 +39,7 @@
 
 ```json
 {
-  "id_company": "1",
+  "id_student": "1",
   "User name": "Ivan",
   "email": "ivan@gmail.com",
   "password": "53132f6ew",
@@ -47,6 +48,23 @@
 }
 ```
 Запрос доступен для ролей: Cистема,регистрация пользователя.
+
+## Обновление данных пользователя
+`PUTCH/student/1`
+Пример ответа:
+
+```json
+{
+  "User name": "Ivan",
+  "email": "ivan@gmail.com",
+  "password": "53132f6ew",
+  "createdAt": "2022-06-22T11:40:00Z",
+  "updatedAt": "2022-06-22T11:40:00Z"
+}
+```
+Запрос доступен для ролей: Обновление данных пользователя
+
+
 ## Регистация компании
  ![Рисунок 2](./2da.png)
 
@@ -63,7 +81,7 @@
 
 ```json
 {
-  "id_student": "1",
+  "id_company": "1",
   "name_company": "GNIVC",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
@@ -74,13 +92,30 @@
 ```
 Запрос доступен для ролей: Cистема,регистрация компании.
 
-## Авторизация
- ![Рисунок 2](./2da.png)
+## Обновление данных компании
+`PUTCH/company/1`
+Пример ответа:
 
- `GET/company`
 ```json
 {
   "name_company": "GNIVC",
+  "User name": "Aram",
+  "email": "gnivc@gmail.com",
+  "password": "dwada1432",
+  "createdAt": "2022-06-22T11:40:00Z",
+  "updatedAt": "2022-06-22T11:40:00Z"
+}
+```
+Запрос доступен для ролей: Обновление данных студента
+
+## Авторизация
+ ![Рисунок 2](./2da.png)
+
+ `GET/(company/student)`
+```json
+{
+  "name_company": "GNIVC",
+  "name_student": "Ivan",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
   "password": "dwada1432"
@@ -91,6 +126,7 @@
 ```json
 {
   "id_student": "1",
+  "id_company": "1",
   "name_company": "GNIVC",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
@@ -145,7 +181,8 @@
 
 ```json
 {
-  "comment": "Приняты/Не приняты",
+  "id_vacancy": "1",
+  "id_student": "1"
 }
 ```
 
@@ -153,24 +190,7 @@
 
 ```json
 {
-  "id_vacancy": "1",
-  "id_student": "1",
-  "comment": "Приняты/Не приняты",
-  "createdAt": "2022-06-22T11:40:00Z",
-  "updatedAt": "2022-06-22T11:40:00Z"
-}
-```
-Запрос доступен для ролей: Отклик на вакансию
-
-## Обновнеине отклика
-`PUTCH/respone/1`
-Пример ответа:
-
-```json
-{
-  "id_vacancy": "1",
-  "id_student": "1",
-  "comment": "Приняты/Не приняты",
+  "comment": "Откликнулся",
   "createdAt": "2022-06-22T11:40:00Z",
   "updatedAt": "2022-06-22T11:40:00Z"
 }
@@ -234,6 +254,8 @@
 `GET/chats`
 ```json
 {
+  "id_student": "1",
+  "id_company": "1",
   "message_student": "Я хочу устроиться к вам на стажировку",
   "message_company": "Почему вы хотите устроиться к нам на стажировку"
 }
