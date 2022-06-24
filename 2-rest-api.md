@@ -37,7 +37,7 @@
 
 ```json
 {
-  "id_student": "1",
+  "id_student": 1,
   "User name": "Ivan",
   "email": "ivan@gmail.com",
   "password": "53132f6ew",
@@ -79,7 +79,7 @@
 
 ```json
 {
-  "id_company": "1",
+  "id_company": 1,
   "name_company": "GNIVC",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
@@ -123,8 +123,8 @@
 
 ```json
 {
-  "id_student": "1",
-  "id_company": "1",
+  "id_student": 1,
+  "id_company": 1,
   "name_company": "GNIVC",
   "User name": "Aram",
   "email": "gnivc@gmail.com",
@@ -148,7 +148,7 @@
 Пример ответа:
 ```json
 {
-  "id_vacancy": "1",
+  "id_vacancy": 1,
   "name_company": "GNIVC",
   "name_vacancy": "Аналитик",
   "dicripsion": "Предоставляем хорошие условия труда",
@@ -164,7 +164,7 @@
 Пример ответа:
 ```json
 {
-  "id_vacancy": "1",
+  "id_vacancy": 1,
   "name_company": "GNIVC",
   "name_vacancy": "Аналитик",
   "dicripsion": "Предоставляем хорошие условия труда",
@@ -179,8 +179,8 @@
 
 ```json
 {
-  "id_vacancy": "1",
-  "id_student": "1"
+  "id_vacancy": 1,
+  "id_student": 1
 }
 ```
 
@@ -203,16 +203,16 @@
 {
   "question": "Что делает бизнес-аналитик?",
   "anwer": " Аналитик собирает данные и доносит их разработчику",
-  "result": "5",
+  "result": 5,
 }
 ```
 Пример ответа:
 
 ```json
 {
-  "id_test_vacancy": "1",
-  "id_student": "1",
-  "result": "5",
+  "id_test_vacancy": 1,
+  "id_student": 1,
+  "result": 5,
   "question": "Что делает бизнес-аналитик?",
   "anwer": " Аналитик собирает данные и доносит их разработчику",
   "createdAt": "2022-06-22T11:40:00Z",
@@ -227,7 +227,7 @@
 `PUT/test_vacancy/1`
 ```json
 {
-  "id_test_vacancy": "1",
+  "id_test_vacancy": 1,
   "question": "Что делает бизнес-аналитик?",
   "anwer": " Аналитик собирает данные и доносит их разработчику"
 }
@@ -236,9 +236,9 @@
 
 ```json
 {
-  "id_test_vacancy": "1",
-  "id_student": "1",
-  "result": "5",
+  "id_test_vacancy": 1,
+  "id_student": 1,
+  "result": 5,
   "question": "Что делает бизнес-аналитик?",
   "anwer": " Аналитик собирает данные и доносит их разработчику",
   "createdAt": "2022-06-22T11:40:00Z",
@@ -252,8 +252,8 @@
 `GET/chats`
 ```json
 {
-  "id_student": "1",
-  "id_company": "1",
+  "id_student": 1,
+  "id_company": 1,
   "message_student": "Я хочу устроиться к вам на стажировку",
   "message_company": "Почему вы хотите устроиться к нам на стажировку"
 }
@@ -262,9 +262,9 @@
 
 ```json
 {
-  "id_chats": "1",
-  "id_student": "1",
-  "id_company": "1",
+  "id_chats": 1,
+  "id_student": 1,
+  "id_company": 1,
   "createdAt": "2022-06-22T11:40:00Z",
   "updatedAt": "2022-06-22T11:40:00Z"
 }
