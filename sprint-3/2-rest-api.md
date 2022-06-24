@@ -1,6 +1,6 @@
 # REST API
 
-![Рисунок 2](./cefweaecawafnes2.png)
+![Рисунок 2](./cefweaecawafnes3.png)
 
 
 ## Клиенты REST API
