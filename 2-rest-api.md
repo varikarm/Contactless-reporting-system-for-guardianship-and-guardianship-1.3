@@ -53,9 +53,9 @@
 
 ```json
 {
-  "User name": "Ivan",
-  "email": "ivan@gmail.com",
-  "password": "53132f6ew",
+  "User name": "Andrey",
+  "email": "andrey@gmail.com",
+  "password": "53147181hhhs",
   "createdAt": "2022-06-22T11:40:00Z",
   "updatedAt": "2022-06-22T11:40:00Z"
 }
@@ -91,15 +91,15 @@
 Запрос доступен для ролей: Cистема,регистрация компании.
 
 ## Обновление данных компании
-`PUTCH/company/1`
+`PATCH/company/1`
 Пример ответа:
 
 ```json
 {
-  "name_company": "GNIVC",
-  "User name": "Aram",
-  "email": "gnivc@gmail.com",
-  "password": "dwada1432",
+  "name_company": "GNIVC_COMPANY",
+  "User name": "Mask",
+  "email": "gnivc_company@gmail.com",
+  "password": "dxsxwwsx14",
   "createdAt": "2022-06-22T11:40:00Z",
   "updatedAt": "2022-06-22T11:40:00Z"
 }
